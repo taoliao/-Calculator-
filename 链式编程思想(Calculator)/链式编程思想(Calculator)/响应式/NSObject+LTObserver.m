@@ -17,7 +17,8 @@
     //kvo 的本质是监听是否调用对象的set方法
     //1.创建对象NSKVONotifying_Person
     //2.改变对象的指针，指向NSKVONotifying_Person
-    //3.添加对象observer属性
+    //3.添加对象observer属性 属性就是监听者（viewcontroller）
+    //子类重写set方法，调用[super setAge:age]; 取出observer属性调用属性更改方法
     
     object_setClass(self, [LTKVONotifying_Person class]);
     
