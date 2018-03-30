@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D45537F3206DE71100E3CC36 /* LTKVONotifying_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D45537F2206DE71100E3CC36 /* LTKVONotifying_Person.m */; };
 		D476B9CF206CDD7700F14566 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B9CE206CDD7700F14566 /* AppDelegate.m */; };
 		D476B9D2206CDD7700F14566 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B9D1206CDD7700F14566 /* ViewController.m */; };
 		D476B9D5206CDD7700F14566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D476B9D3206CDD7700F14566 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		D476B9F2206CDD7700F14566 /* _______Calculator_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B9F1206CDD7700F14566 /* _______Calculator_UITests.m */; };
 		D476BA03206CDD9200F14566 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = D476B9FF206CDD9100F14566 /* Calculator.m */; };
 		D476BA04206CDD9200F14566 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = D476BA02206CDD9100F14566 /* NSObject+Calculator.m */; };
+		D4829AB0206DE00400623E53 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D4829AAF206DE00400623E53 /* Person.m */; };
+		D4829AB5206DE21100623E53 /* NSObject+LTObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D4829AB4206DE21100623E53 /* NSObject+LTObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D45537F1206DE71100E3CC36 /* LTKVONotifying_Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTKVONotifying_Person.h; sourceTree = "<group>"; };
+		D45537F2206DE71100E3CC36 /* LTKVONotifying_Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTKVONotifying_Person.m; sourceTree = "<group>"; };
 		D476B9CA206CDD7700F14566 /* 链式编程思想(Calculator).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "链式编程思想(Calculator).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D476B9CD206CDD7700F14566 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D476B9CE206CDD7700F14566 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +62,10 @@
 		D476BA00206CDD9100F14566 /* NSObject+Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculator.h"; sourceTree = "<group>"; };
 		D476BA01206CDD9100F14566 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		D476BA02206CDD9100F14566 /* NSObject+Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculator.m"; sourceTree = "<group>"; };
+		D4829AAE206DE00400623E53 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D4829AAF206DE00400623E53 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D4829AB3206DE21100623E53 /* NSObject+LTObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LTObserver.h"; sourceTree = "<group>"; };
+		D4829AB4206DE21100623E53 /* NSObject+LTObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTObserver.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +120,8 @@
 				D476B9CE206CDD7700F14566 /* AppDelegate.m */,
 				D476B9D0206CDD7700F14566 /* ViewController.h */,
 				D476B9D1206CDD7700F14566 /* ViewController.m */,
-				D476BA01206CDD9100F14566 /* Calculator.h */,
-				D476B9FF206CDD9100F14566 /* Calculator.m */,
-				D476BA00206CDD9100F14566 /* NSObject+Calculator.h */,
-				D476BA02206CDD9100F14566 /* NSObject+Calculator.m */,
+				D4829AB2206DE02600623E53 /* 响应式 */,
+				D4829AB1206DE01600623E53 /* 链式 */,
 				D476B9D3206CDD7700F14566 /* Main.storyboard */,
 				D476B9D6206CDD7700F14566 /* Assets.xcassets */,
 				D476B9D8206CDD7700F14566 /* LaunchScreen.storyboard */,
@@ -140,6 +147,30 @@
 				D476B9F3206CDD7700F14566 /* Info.plist */,
 			);
 			path = "链式编程思想(Calculator)UITests";
+			sourceTree = "<group>";
+		};
+		D4829AB1206DE01600623E53 /* 链式 */ = {
+			isa = PBXGroup;
+			children = (
+				D476BA01206CDD9100F14566 /* Calculator.h */,
+				D476B9FF206CDD9100F14566 /* Calculator.m */,
+				D476BA00206CDD9100F14566 /* NSObject+Calculator.h */,
+				D476BA02206CDD9100F14566 /* NSObject+Calculator.m */,
+			);
+			path = "链式";
+			sourceTree = "<group>";
+		};
+		D4829AB2206DE02600623E53 /* 响应式 */ = {
+			isa = PBXGroup;
+			children = (
+				D4829AAE206DE00400623E53 /* Person.h */,
+				D4829AAF206DE00400623E53 /* Person.m */,
+				D4829AB3206DE21100623E53 /* NSObject+LTObserver.h */,
+				D4829AB4206DE21100623E53 /* NSObject+LTObserver.m */,
+				D45537F1206DE71100E3CC36 /* LTKVONotifying_Person.h */,
+				D45537F2206DE71100E3CC36 /* LTKVONotifying_Person.m */,
+			);
+			path = "响应式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,11 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4829AB0206DE00400623E53 /* Person.m in Sources */,
 				D476B9D2206CDD7700F14566 /* ViewController.m in Sources */,
+				D4829AB5206DE21100623E53 /* NSObject+LTObserver.m in Sources */,
 				D476BA03206CDD9200F14566 /* Calculator.m in Sources */,
 				D476BA04206CDD9200F14566 /* NSObject+Calculator.m in Sources */,
 				D476B9DD206CDD7700F14566 /* main.m in Sources */,
 				D476B9CF206CDD7700F14566 /* AppDelegate.m in Sources */,
+				D45537F3206DE71100E3CC36 /* LTKVONotifying_Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

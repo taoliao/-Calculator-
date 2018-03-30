@@ -8,8 +8,15 @@
 
 #import "ViewController.h"
 #import "NSObject+Calculator.h"
+#import "Calculator.h"
+
+#import "Person.h"
+#import "NSObject+LTObserver.h"
+#import "LTKVONotifying_Person.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong) Person *p;
 
 @end
 
@@ -32,11 +39,24 @@
     }];
     
      NSLog(@"%lf",result);
-    
     //链式编程的特点：方法的返回值是一个block，block的参数是你想传入的值，block的返回值是方法调用者 要做的事情全部在block中处理
+    
+    Person *p = [[Person alloc] init];
+    
+    
+    _p = p;
+    
+    [p lt_addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew context:nil];
+    
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+        NSLog(@"%d",_p.age);
+}
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    _p.age++ ;
+}
 
 
 @end

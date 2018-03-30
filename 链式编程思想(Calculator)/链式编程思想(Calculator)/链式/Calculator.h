@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface Calculator : NSObject
 
 - (Calculator *(^)(double num))add;
@@ -19,5 +20,6 @@
 - (Calculator *(^)(double num))divide;
 
 @property(nonatomic,assign) double result;
+
 
 @end
