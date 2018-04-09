@@ -20,6 +20,7 @@
 		D476BA04206CDD9200F14566 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = D476BA02206CDD9100F14566 /* NSObject+Calculator.m */; };
 		D4829AB0206DE00400623E53 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D4829AAF206DE00400623E53 /* Person.m */; };
 		D4829AB5206DE21100623E53 /* NSObject+LTObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D4829AB4206DE21100623E53 /* NSObject+LTObserver.m */; };
+		D4EE8EAD207B19CA0023AD01 /* TLRegularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EE8EAC207B19CA0023AD01 /* TLRegularLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		D4829AAF206DE00400623E53 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D4829AB3206DE21100623E53 /* NSObject+LTObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LTObserver.h"; sourceTree = "<group>"; };
 		D4829AB4206DE21100623E53 /* NSObject+LTObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTObserver.m"; sourceTree = "<group>"; };
+		D4EE8EAB207B19CA0023AD01 /* TLRegularLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLRegularLabel.h; sourceTree = "<group>"; };
+		D4EE8EAC207B19CA0023AD01 /* TLRegularLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLRegularLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				D476B9CE206CDD7700F14566 /* AppDelegate.m */,
 				D476B9D0206CDD7700F14566 /* ViewController.h */,
 				D476B9D1206CDD7700F14566 /* ViewController.m */,
+				D4EE8EAB207B19CA0023AD01 /* TLRegularLabel.h */,
+				D4EE8EAC207B19CA0023AD01 /* TLRegularLabel.m */,
 				D4829AB2206DE02600623E53 /* 响应式 */,
 				D4829AB1206DE01600623E53 /* 链式 */,
 				D476B9D3206CDD7700F14566 /* Main.storyboard */,
@@ -306,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EE8EAD207B19CA0023AD01 /* TLRegularLabel.m in Sources */,
 				D4829AB0206DE00400623E53 /* Person.m in Sources */,
 				D476B9D2206CDD7700F14566 /* ViewController.m in Sources */,
 				D4829AB5206DE21100623E53 /* NSObject+LTObserver.m in Sources */,

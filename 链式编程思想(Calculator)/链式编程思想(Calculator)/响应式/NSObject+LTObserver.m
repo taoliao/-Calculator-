@@ -20,7 +20,7 @@
     //3.添加对象observer属性 属性就是监听者（viewcontroller）
     //子类重写set方法，调用[super setAge:age]; 取出observer属性调用属性更改方法
     
-    object_setClass(self, [LTKVONotifying_Person class]);
+    object_setClass(self, [LTKVONotifying_Person class]);  //.改变对象的指针
     
     objc_setAssociatedObject(self, @"observer", observer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     

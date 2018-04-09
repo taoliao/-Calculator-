@@ -17,15 +17,10 @@
     
    [super setAge:age];
     
-    
    id observer =  objc_getAssociatedObject(self, @"observer");
 
    [observer observeValueForKeyPath:@"age" ofObject:self change:nil context:nil];
     
 }
-
-
-
-
 
 @end

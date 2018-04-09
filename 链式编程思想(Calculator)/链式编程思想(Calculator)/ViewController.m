@@ -14,6 +14,8 @@
 #import "NSObject+LTObserver.h"
 #import "LTKVONotifying_Person.h"
 
+#import "TLRegularLabel.h"
+
 @interface ViewController ()
 
 @property(nonatomic,strong) Person *p;
@@ -25,7 +27,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    TLRegularLabel *label = [[TLRegularLabel alloc] initWithFrame:CGRectMake(90, 200, 200, 40)];
+    label.text = @"这是一个不规则label";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor redColor];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont boldSystemFontOfSize:16];
+    [self.view addSubview:label];
+
     
+
+
    double result = [NSObject mas_makeCalculator:^(Calculator *maker) {
         
         maker.add(10.5).add(20).add(30.3).add(40);
@@ -55,7 +67,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    _p.age++ ;
+       _p.age++ ;
 }
 
 
